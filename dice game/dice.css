@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgba(23, 26, 182, 0.822), rgba(114, 7, 87, 0.822));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   justify-content: center;
+}
+
+.game-container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px; 
+}
+
+.player-0 {
+    min-width: 48vw;
+    min-height: 90vh;
+    margin: 10px auto;
+    /* border: 2px solid white; */
+    text-align: center;
+    color: wheat;
+    background: rgba(243, 178, 148, 0.322);
+    border-radius: 10px;
+}
+
+.player-1 {
+    min-width: 48vw;
+    margin: 10px auto;
+    /* border: 2px solid white; */
+    text-align: center;
+    color: wheat;
+    background: rgba(243, 178, 148, 0.322);
+    border-radius: 10px;
+
+}
+
+h2 {
+    margin-top: 12px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+article {
+    position: relative;
+    top: 70%;
+}
+
+
+.dice {
+    display: block;
+   margin: 12px auto;
+   transform: translateY(-65vh);
+   border: 2px solid rgba(0, 0, 0, 0.623); 
+}
+
+.btn-new,
+.btn-hold,
+.btn-roll {
+    display: block;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-54vh);
+
+}
+
+
+
+.current {
+    background: purple;
+    max-width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.winner {
+    background-color: #796521;
+    color: rgb(250, 250, 250);
+}
+
+
+@media screen and (min-width: 630px) {
+   .current {
+       font-size: 25px;
+    }   
+
+    .btn-new,
+    .btn-hold,
+    .btn-roll {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+   .dice {
+       width: 100px;
+       height: 100px;
+    }
+
+    .game-container {
+        overflow: hidden;
+    }
+}
